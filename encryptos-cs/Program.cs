@@ -30,9 +30,16 @@ class Program
         // ----------
         // az xor operáció működik-e byte array-en
 
-        //BitArray[] text =  Encoding.UTF8.GetBytes("I love milk!");
-        //BitArray[] textKey = Encoding.UTF8.GetBytes("I HATE MILK!");
+        BitArray text =  new BitArray(Encoding.UTF8.GetBytes("I love milk!"));
+        BitArray textKey = new BitArray(Encoding.UTF8.GetBytes("I HATE MILK!"));
+
+        foreach (bool value in text) {
+            if (value) Console.Write('1');
+            else Console.Write('0');
+        }
 
 
     }
+    
+    
 }
